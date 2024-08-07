@@ -1,0 +1,26 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "A template for creating a new project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "bin": {
+    "project-template": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "Naufal Akbar Nugroho",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "shelljs": "^0.8.5"
+  }
+}
