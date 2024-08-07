@@ -2,12 +2,15 @@
 
 import * as p from '@clack/prompts';
 import { setTimeout } from 'node:timers/promises';
+import { fileURLToPath } from 'node:url';
 import color from 'picocolors';
 import shell from 'shelljs';
 import path from 'node:path';
 import fs from 'node:fs';
 
 async function main() {
+    const __filename = fileURLToPath(import.meta.url);
+
     const replicateTemplates = async (templatePath, projectPath) => {
         let templateFilesNames = fs.readdirSync(templatePath);
 
@@ -16,8 +19,10 @@ async function main() {
 
         if (!fs.existsSync(projectPath)) {
             fs.mkdirSync(projectPath);
-        } else {
-            p.cancel('Directory already exists');
+        }
+
+        if (fs.existsSync(projectPath) && fs.readdirSync(projectPath).length > 0) {
+            p.cancel('Directory is not empty! Please create a project in an empty directory.');
             process.exit(1);
         }
 
@@ -88,7 +93,7 @@ async function main() {
         const projectTemplate = project.type;
 
         const projectPath = path.join(process.cwd(), projectName);
-        const templatePath = path.join(__dirname, 'templates', projectTemplate);
+        const templatePath = path.join(path.dirname(__filename), 'templates', projectTemplate);
 
         await replicateTemplates(templatePath, projectPath);
 

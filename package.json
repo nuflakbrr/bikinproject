@@ -1,18 +1,15 @@
 {
-  "name": "bikinproject",
-  "version": "1.0.2",
+  "name": "bikinproject-test",
+  "version": "1.0.0",
   "description": "A template for creating a new project",
-  "main": "index.js",
+  "main": "./index.js",
   "type": "module",
   "scripts": {
     "generate": "node index.js"
   },
-  "bin": {
-    "bikinproject": "./index.js"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nuflakbrr/bikinproject"
+    "url": "git+https://github.com/nuflakbrr/bikinproject.git"
   },
   "keywords": [
     "project template",
@@ -21,10 +18,21 @@
     "bikinproject",
     "cli"
   ],
-  "author": "Naufal Akbar Nugroho",
+  "author": {
+    "name": "Naufal Akbar Nugroho",
+    "email": "naufalakbar378@gmail.com",
+    "url": "https://github.com/nuflakbrr"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nuflakbrr/bikinproject/issues"
+  },
+  "homepage": "https://github.com/nuflakbrr/bikinproject#readme",
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "shelljs": "^0.8.5"
+  },
+  "bin": {
+    "bikinproject": "./index.js"
   }
 }
