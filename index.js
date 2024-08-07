@@ -51,7 +51,7 @@ async function main() {
             path: () =>
                 p.text({
                     message: 'Where should we create your project?',
-                    placeholder: './next-template',
+                    placeholder: './your-project',
                     validate: (value) => {
                         if (!value) return 'Please enter a path.';
                         if (value[0] !== '.') return 'Please enter a relative path.';
