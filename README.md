@@ -4,7 +4,7 @@ BikinProject adalah sebuah package starter project generator yang memudahkan And
 
 ## Daftar Dalam Bahasa Lain
 
-- [English](./README.md)
+- [English](./README.en.md)
 
 ## Daftar Isi
 
