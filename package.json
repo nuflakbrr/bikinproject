@@ -1,5 +1,5 @@
 {
-  "name": "project-template",
+  "name": "bikinproject",
   "version": "1.0.0",
   "description": "A template for creating a new project",
   "main": "index.js",
@@ -8,14 +8,18 @@
     "generate": "node index.js"
   },
   "bin": {
-    "project-template": "./index.js"
+    "bikinproject": "./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "-"
+    "url": "https://github.com/nuflakbrr/bikinproject"
   },
   "keywords": [
-    "-"
+    "project template",
+    "boilerplate",
+    "starter project",
+    "bikinproject",
+    "cli"
   ],
   "author": "Naufal Akbar Nugroho",
   "license": "MIT",
