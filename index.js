@@ -88,7 +88,7 @@ async function main() {
         const projectTemplate = project.type;
 
         const projectPath = path.join(process.cwd(), projectName);
-        const templatePath = path.join('./templates', projectTemplate);
+        const templatePath = path.join(__dirname, 'templates', projectTemplate);
 
         await replicateTemplates(templatePath, projectPath);
 
@@ -109,8 +109,6 @@ async function main() {
         p.note(nextSteps, 'Next steps.');
         p.outro(contact);
     }
-
-    console.log(process.cwd());
 }
 
 main().catch(console.error);
