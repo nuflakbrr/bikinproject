@@ -111,13 +111,4 @@ async function main() {
     }
 }
 
-const args = process.argv.slice(2);
-
-if (args.length > 0 && args[0] === 'generate') {
-    main().catch(console.error);
-} else {
-    let availableCommands = `bikinproject generate`;
-    p.log.error('Invalid Command.');
-    p.note(availableCommands, 'Available Command.');
-    process.exit(1);
-}
+main().catch(console.error);
