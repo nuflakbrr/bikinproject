@@ -48,15 +48,15 @@ Lalu Anda dapat menjawan beberapa pertanyaan yang diajukan oleh package `BikinPr
 │
 ◇  🎉 Project Created!
 │
-◇  Next steps. ──────────╮
-│                        │
-│  cd ./your-project     │
-│  npm install           │
-│  npm run dev           │
-│                        │
-├────────────────────────╯
+◇  Next steps. ───────────────╮
+│                             │
+│  cd ./your-project          │
+│  npm install                │
+│  npm run dev                │
+│                             │
+├─────────────────────────────╯
 │
-└  Have a Problems? Report to naufalakbar378@gmail.com
+└  Have a Problems? Report to https://github.com/nuflakbrr/bikinproject/issues
 ```
 
 ## Daftar Framework

@@ -1,5 +1,7 @@
 # BikinProject
 
+![BikinProject](./assets/BikinProject.jpg)
+
 BikinProject is a starter project generator package that makes it easier for you when you want to create a project. The starter project provided is a custom starter project that has been designed in such a way that it can be easily used. Starter projects are available with various frameworks and programming languages.
 
 ## List in Other Languages
@@ -45,15 +47,15 @@ Then you can answer some questions asked by package `BikinProject`:
 │
 ◇  🎉 Project Created!
 │
-◇  Next steps. ──────────╮
-│                        │
-│  cd ./your-project     │
-│  npm install           │
-│  npm run dev           │
-│                        │
-├────────────────────────╯
+◇  Next steps. ───────────────╮
+│                             │
+│  cd ./your-project          │
+│  npm install                │
+│  npm run dev                │
+│                             │
+├─────────────────────────────╯
 │
-└  Have a Problems? Report to naufalakbar378@gmail.com
+└  Have a Problems? Report to https://github.com/nuflakbrr/bikinproject/issues
 ```
 
 ## Framework List
