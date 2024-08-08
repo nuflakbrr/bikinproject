@@ -1,5 +1,7 @@
 # BikinProject
 
+![BikinProject](./assets/BikinProject.jpg)
+
 BikinProject adalah sebuah package starter project generator yang memudahkan Anda saat ingin membuat project. Starter project yang disediakan adalah project starter custom yang sudah didesain dengan sedemikian rupa agar dapat mudah digunakan. Starter project tersedia dengan berbagai macam framework dan bahasa pemrograman.
 
 ## Daftar Dalam Bahasa Lain
