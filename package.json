@@ -1,6 +1,6 @@
 {
   "name": "bikinproject",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "An package starter project generator that makes it easier when create a project.",
   "main": "./index.js",
   "type": "module",
