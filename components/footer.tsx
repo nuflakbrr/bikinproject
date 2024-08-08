@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import { HeartIcon, HexagonIcon, TriangleIcon } from "lucide-react";
+import { HeartIcon } from "lucide-react";
 
 export function Footer() {
   return (
@@ -44,6 +44,8 @@ export function FooterButtons() {
       <Link
         href="https://github.com/sponsors/nuflakbrr"
         className={buttonVariants({ variant: "outline", size: "sm" })}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <HeartIcon className="w-4 h-4 mr-2 text-red-600 fill-current" />
         Sponsor
