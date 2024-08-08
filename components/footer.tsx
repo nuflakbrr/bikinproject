@@ -4,22 +4,25 @@ import { HeartIcon, HexagonIcon, TriangleIcon } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t w-full h-16">
-      <div className="container flex items-center sm:justify-between justify-center sm:gap-0 gap-4 h-full text-muted-foreground text-sm flex-wrap sm:py-0 py-3">
+    <footer className="w-full h-16 border-t">
+      <div className="container flex flex-wrap items-center justify-center h-full gap-4 py-3 text-sm sm:justify-between sm:gap-0 text-muted-foreground sm:py-0">
         <div className="flex items-center gap-3">
-          <HexagonIcon className="sm:block hidden w-5 h-5 text-muted-foreground fill-current" />
+          <div className="flex items-center">
+            <span className="text-2xl">📦</span>
+            <h2 className="font-bold text-md">BikinProject</h2>
+          </div>
           <p className="text-center">
             Build by{" "}
             <Link
               className="px-1 underline underline-offset-2"
-              href="https://github.com/nisabmohd"
+              href="https://github.com/nuflakbrr"
             >
-              nisabmohd
+              nuflakbrr
             </Link>
             . The source code is available on{" "}
             <Link
               className="px-1 underline underline-offset-2"
-              href="https://github.com/nisabmohd/Docs-Stater-Template"
+              href="https://github.com/nuflakbrr/bikinproject"
             >
               GitHub
             </Link>
@@ -27,7 +30,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="gap-4 items-center hidden md:flex">
+        <div className="items-center hidden gap-4 md:flex">
           <FooterButtons />
         </div>
       </div>
@@ -39,17 +42,10 @@ export function FooterButtons() {
   return (
     <>
       <Link
-        href="https://vercel.com/templates/next.js/documentation-template"
+        href="https://github.com/sponsors/nuflakbrr"
         className={buttonVariants({ variant: "outline", size: "sm" })}
       >
-        <TriangleIcon className="h-[0.8rem] w-4 mr-2 text-primary fill-current" />
-        Deploy
-      </Link>
-      <Link
-        href="https://github.com/sponsors/nisabmohd"
-        className={buttonVariants({ variant: "outline", size: "sm" })}
-      >
-        <HeartIcon className="h-4 w-4 mr-2 text-red-600 fill-current" />
+        <HeartIcon className="w-4 h-4 mr-2 text-red-600 fill-current" />
         Sponsor
       </Link>
     </>
