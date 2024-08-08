@@ -81,4 +81,11 @@ For a complete guide on how to contribute to this project, please open the [CONT
 
 This work is licensed under the [MIT LICENSE](./LICENSE).
 
-## Author Author name and contact info, Naufal Akbar Nugroho [Website](https://nuflakbrr.vercel.app) [@nuflakbrr](https://github.com/nuflakbrr) [@kbrnugroho](https://instagram.com/kbrnugroho)
+## Author
+
+Author name and contact info,
+
+Naufal Akbar Nugroho
+[Website](https://nuflakbrr.vercel.app)
+[@nuflakbrr](https://github.com/nuflakbrr)
+[@kbrnugroho](https://instagram.com/kbrnugroho)
