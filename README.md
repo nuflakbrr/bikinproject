@@ -1,75 +1,76 @@
-## Documentation Template
+# BikinProject Documentation Website
 
-This feature-packed documentation template, built with Next.js, offers a sleek and responsive design, perfect for all your project documentation needs.
+![BikinProject](./app/opengraph-image.jpg)
 
-<br/>
+BikinProject is a starter project generator package that makes it easier for you when you want to create a project. The starter project provided is a custom starter project that has been designed in such a way that it can be easily used. Starter projects are available with various frameworks and programming languages.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`docs-template`](https://github.com/nisabmohd/Documentation-Template).
 
 ## Getting Started
 
-First, run the development server:
+You can use this package by running the following command in your `terminal`:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx bikinproject@latest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then you can answer some questions asked by package `BikinProject`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/nisabmohd/Documentation-Template)
-
-Got it! Here's a way to present the features in a more structured and visually appealing way using a table:
-
-
-
-
-## Features
-
-```plaintext
-Features
-├── MDX supported
-├── Syntax highlighting
-├── Table of contents
-├── Pagination
-├── Search
-├── Code line highlight & code title
-├── Static site generation
-├── Custom components
-├── Light mode & dark mode
-├── Code Switcher
-├── Code copy
-└── Table of content observer highlight
+```bash
+┌   create-bikinproject-app
+│
+◇  Where should we create your project?
+│  ./your-project
+│
+◇  Pick a project type within "./your-project"
+│  Next.js App Router (Tailwind + TypeScript)
+│
+◇  Install dependencies?
+│  No
+│
+◇  ⏳ Creating project...
+│
+◇  🎉 Project Created!
+│
+◇  Next steps. ───────────────╮
+│                             │
+│  cd ./your-project          │
+│  npm install                │
+│  npm run dev                │
+│                             │
+├─────────────────────────────╯
+│
+└  Have a Problems? Report to https://github.com/nuflakbrr/bikinproject/issues
 ```
 
+## Framework List
 
+### Frontend
 
-<img src="./public/screely-1719313562121.png" />
-<img src="./public/screely-1719313578041.png" />
-<img src="./public/screely-1719313622174.png" />
-<img src="./public/screely-1719313611520.png" />
-<img src="./public/screely-1719313597608.png" />
+- Next.js App Router (Tailwind + TypeScript)
+- Next.js App Router (Tailwind + JavaScript) 🚧
+
+### Backend
+
+- Node.js 🚧
+
+### Fullstack
+
+- 🚧
+
+## How to Contribute
+
+For a complete guide on how to contribute to this project, please open the [CONTRIBUTING.md](https://github.com/nuflakbrr/bikinproject/blob/main/CONTRIBUTING.md) file.
+
+## License
+
+This work is licensed under the [MIT LICENSE](./LICENSE).
+
+## Author
+
+Author name and contact info,
+
+Naufal Akbar Nugroho
+[Website](https://nuflakbrr.vercel.app)
+[@nuflakbrr](https://github.com/nuflakbrr)
+[@kbrnugroho](https://instagram.com/kbrnugroho)
