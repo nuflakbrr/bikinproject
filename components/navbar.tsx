@@ -21,10 +21,10 @@ export const NAVLINKS = [
   //   title: "Examples",
   //   href: "#",
   // },
-  {
-    title: "Blog",
-    href: "#",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "#",
+  // },
 ];
 
 export function Navbar() {
