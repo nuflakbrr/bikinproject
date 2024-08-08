@@ -1,7 +1,7 @@
 {
   "name": "bikinproject",
   "version": "1.0.0",
-  "description": "A template for creating a new project",
+  "description": "An package starter project generator that makes it easier when create a project.",
   "main": "./index.js",
   "type": "module",
   "scripts": {
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/nuflakbrr/bikinproject/issues"
   },
-  "homepage": "https://github.com/nuflakbrr/bikinproject#readme",
+  "homepage": "https://nuflakbrr.github.io/bikinproject/",
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "shelljs": "^0.8.5"
