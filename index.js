@@ -59,7 +59,7 @@ async function main() {
                 }),
             type: ({ results }) =>
                 p.select({
-                    message: `Pick a project type within "${results.path}"`,
+                    message: `Pick a starter project type within "${results.path}"`,
                     initialValue: 'next-ts-template',
                     maxItems: 5,
                     options: [
@@ -69,7 +69,7 @@ async function main() {
                 }),
             install: () =>
                 p.confirm({
-                    message: 'Install dependencies?',
+                    message: 'Install dependencies? (currently only npm is supported)',
                     initialValue: false,
                 }),
         },
@@ -84,7 +84,7 @@ async function main() {
     if (project !== null || project !== undefined) {
         const s = p.spinner();
         const nextSteps = `cd ${project.path}        \n${project.install ? '' : 'npm install\n'}npm run dev`;
-        const contact = `Have a Problems? Report to ${color.underline(color.cyan('naufalakbar378@gmail.com'))}`;
+        const contact = `Have a Problems? Report to ${color.underline(color.cyan('https://github.com/nuflakbrr/bikinproject/issues'))}`;
 
         s.start('⏳ Creating project...');
         await setTimeout(2500);
@@ -98,6 +98,7 @@ async function main() {
         await replicateTemplates(templatePath, projectPath);
 
         if (project.install && fs.existsSync(path.join(projectPath, 'package.json'))) {
+            s.stop('✅ Project created!');
             s.start('📦 Installing dependencies...');
             await setTimeout(2500);
 
@@ -105,12 +106,13 @@ async function main() {
             shell.exec('npm install --silent');
 
             s.stop('✅ Dependencies installed!');
+            p.log.step('🎉 Project ready to use!');
             p.note(nextSteps, 'Next steps.');
             p.outro(contact);
             process.exit(1);
         }
 
-        s.stop('🎉 Project Created!');
+        s.stop('🎉 Project created!');
         p.note(nextSteps, 'Next steps.');
         p.outro(contact);
     }
