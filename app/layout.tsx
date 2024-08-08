@@ -8,10 +8,10 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Docs stater template",
-  metadataBase: new URL("https://docstemplate.vercel.app/"),
+  title: "BikinProject - An package starter project generator that makes it easier when create a project.",
+  metadataBase: new URL("https://nuflakbrr.github.io/bikinproject"),
   description:
-    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+    "An package starter project generator that makes it easier when create a project.",
 };
 
 export default function RootLayout({
