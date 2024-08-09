@@ -4,51 +4,91 @@ description: Installation guide for our application.
 ---
 
 To get started with our application, follow these simple steps:
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
 
-## Prerequisites
+- [Node.js 20.11.0](https://nodejs.org) or later
+- macOS, Windows (including WSL), and Linux are supported.
 
-Before installing our application, make sure you have the following:
+## Getting Started
 
-- Node.js installed on your machine
+To get started with BikinProject, follow these simple steps:
 
-<Note title="Remember" type="danger">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit Numquam iste dolorum
-  tempore consectetur explicabo.
+1. **Install BikinProject**: Start by installing BikinProject on your machine.
+
+```bash
+  npx bikinproject@latest
+```
+
+2. **Tell BikinProject Where to Create the Project**: Input a directory where you want to create your project.
+
+```bash
+  ┌   create-bikinproject-app
+  │
+  ◇  Where should we create your project?
+  └  ./your-project # Input your project name, e.g. my-project or .
+```
+
+3. **Choose a Starter Project**: Choose a starter project that suits your needs.
+
+```bash
+  ┌   create-bikinproject-app
+  │
+  ◇  Where should we create your project?
+  │  ./your-project
+  │
+  ◇  Pick a project type within "./your-project"
+  │  ● Next.js App Router (Tailwind + TypeScript)
+  │  ○ Next.js App Router (Tailwind + JavaScript)
+  │  ○ etc.
+  └  # Select a project type by using the arrow keys
+```
+
+4. **Choose include install dependencies**: Choose to install dependencies or not.
+
+```bash
+  ┌   create-bikinproject-app
+  │
+  ◇  Where should we create your project?
+  │  ./your-project
+  │
+  ◇  Pick a project type within "./your-project"
+  │  Next.js App Router (Tailwind + TypeScript)
+  │
+  ◇  Install dependencies? (currently only NPM is supported)
+  │  ● Yes / ○ No
+  └  # Select Yes or No by using the arrow keys
+```
+
+5. **Wait for BikinProject to Create the Project**: Wait for BikinProject to create the project for you.
+
+<Note title="Note" type="note">
+  If you choose to install dependencies, BikinProject will install the necessary dependencies for you. Please wait for the installation to complete.
 </Note>
 
-## Installation Steps
+```bash
+  ┌   create-bikinproject-app
+  │
+  ◇  Where should we create your project?
+  │  ./your-project
+  │
+  ◇  Pick a project type within "./your-project"
+  │  Next.js App Router (Tailwind + TypeScript)
+  │
+  ◇  Install dependencies? (currently only NPM is supported)
+  │  No
+  │
+  ◇  ⏳ Creating project...
+  │
+  ◇  🎉 Project Created!
+  │
+  ◇  Next steps. ───────────────╮
+  │                             │
+  │  cd ./your-project          │
+  │  npm install                │
+  │  npm run dev                │
+  │                             │
+  ├─────────────────────────────╯
+  │
+  └  Have a Problems? Report to https://github.com/nuflakbrr/bikinproject/issues
+```
 
-1. **Clone the Repository**: Clone our GitHub repository to your local machine.
-
-   ```bash
-   git clone https://github.com/your-repo/your-project.git
-   ```
-
-2. **Navigate to the Project Directory**: Change directory to your project folder.
-
-   ```bash
-   cd your-project
-   ```
-
-3. **Install Dependencies**: Install the necessary dependencies using npm or yarn.
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-4. **Start the Application**: Start the application in development mode.
-
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
-
-5. **Open in Browser**: Open your web browser and navigate to `http://localhost:3000` to view the application.
-
-## Additional Information
-
-For more detailed instructions and troubleshooting tips, refer to our [documentation](#).
+6. **Start Building Your Project**: After BikinProject generate the starter project, you can start building your project.
