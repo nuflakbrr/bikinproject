@@ -19,6 +19,7 @@ export const ROUTES = [
     title: "Available Frameworks",
     href: "available-frameworks",
     items: [
+      { title: "React.js", href: "/reactjs" },
       { title: "Next.js", href: "/nextjs" },
       { title: "Node.js", href: "/nodejs" },
     ],
