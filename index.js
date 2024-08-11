@@ -69,7 +69,7 @@ async function main() {
                 }),
             install: () =>
                 p.confirm({
-                    message: 'Install dependencies? (currently only npm is supported)',
+                    message: 'Install dependencies? (currently only NPM is supported)',
                     initialValue: false,
                 }),
         },
