@@ -5,7 +5,7 @@ export const ROUTES = [
     href: "bikin-project",
     items: [
       { title: "Introduction", href: "/introduction" },
-      { title: "Change Log", href: "/change-log" },
+      { title: "Changelog", href: "/change-log" },
     ],
   },
   {
