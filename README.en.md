@@ -63,7 +63,7 @@ Then you can answer some questions asked by package `BikinProject`:
 ### Frontend
 
 - Next.js App Router (Tailwind + TypeScript)
-- Next.js App Router (Tailwind + JavaScript) 🚧
+- Next.js App Router (Tailwind + JavaScript)
 
 ### Backend
 
