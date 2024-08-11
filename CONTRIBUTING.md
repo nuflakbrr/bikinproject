@@ -86,7 +86,7 @@ git checkout -b template-name
 4. Push ke cabang.
 
 ```bash
-git push asal template-name
+git push origin template-name
 ```
 
 ## Lisensi
