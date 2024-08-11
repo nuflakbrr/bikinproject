@@ -63,6 +63,8 @@ Lalu Anda dapat menjawan beberapa pertanyaan yang diajukan oleh package `BikinPr
 
 ### Frontend
 
+- React.js (Tailwind + TypeScript) 🚧
+- React.js (Tailwind + JavaScript) 🚧
 - Next.js App Router (Tailwind + TypeScript)
 - Next.js App Router (Tailwind + JavaScript)
 
