@@ -1,13 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-type ScreenSize = {
-  width: number;
-  height: number;
-};
-
-const useScreenSize = (): string | undefined => {
-  const [screenSize, setScreenSize] = useState<ScreenSize>({
+const useScreenSize = () => {
+  const [screenSize, setScreenSize] = useState({
     width: 0,
     height: 0,
   });

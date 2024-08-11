@@ -6,7 +6,7 @@ import MainLayout from '@/layouts/MainLayout';
 const ContainerAbout: FC = () => {
   return (
     <MainLayout>
-      <section className="max-w-7xl mx-auto">
+      <section className="flex items-center justify-center max-w-7xl mx-auto min-h-screen">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full px-4">
@@ -59,8 +59,7 @@ const ContainerAbout: FC = () => {
                     mempermudah dalam membuat proyek baru dengan Next.js dan
                     Typescript. Hanya dengan menjalankan perintah:{' '}
                     <span className="bg-gray-200 text-[15px] p-1 rounded font-mono">
-                      npx degit https://github.com/nuflakbrr/next-template.git
-                      nama-proyek
+                      npx degit nuflakbrr/next-template#nextjs-ts nama-proyek
                     </span>
                   </p>
 
