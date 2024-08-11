@@ -2,6 +2,18 @@
 
 ![BikinProject](./assets/BikinProject.jpg)
 
+<p align="center">
+  <a href="https://badge.fury.io/js/bikinproject.svg">
+    <img src="https://badge.fury.io/js/bikinproject.svg" alt="NPM Verion">
+  </a>
+  <a href="https://www.npmjs.com/package/bikinproject">
+    <img src="https://img.shields.io/npm/dt/bikinproject" alt="NPM Downloads">
+  </a>
+  <a href="https://www.npmjs.com/package/bikinproject">
+    <img src="https://img.shields.io/npm/l/bikinproject" alt="NPM License">
+  </a>
+</p>
+
 BikinProject adalah sebuah package starter project generator yang memudahkan Anda saat ingin membuat project. Starter project yang disediakan adalah project starter custom yang sudah didesain dengan sedemikian rupa agar dapat mudah digunakan. Starter project tersedia dengan berbagai macam framework dan bahasa pemrograman.
 
 ## Daftar Dalam Bahasa Lain

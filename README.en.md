@@ -2,6 +2,18 @@
 
 ![BikinProject](./assets/BikinProject.jpg)
 
+<p align="center">
+  <a href="https://badge.fury.io/js/bikinproject.svg">
+    <img src="https://badge.fury.io/js/bikinproject.svg" alt="NPM Verion">
+  </a>
+  <a href="https://www.npmjs.com/package/bikinproject">
+    <img src="https://img.shields.io/npm/dt/bikinproject" alt="NPM Downloads">
+  </a>
+  <a href="https://www.npmjs.com/package/bikinproject">
+    <img src="https://img.shields.io/npm/l/bikinproject" alt="NPM License">
+  </a>
+</p>
+
 BikinProject is a starter project generator package that makes it easier for you when you want to create a project. The starter project provided is a custom starter project that has been designed in such a way that it can be easily used. Starter projects are available with various frameworks and programming languages.
 
 ## List in Other Languages
