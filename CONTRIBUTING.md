@@ -56,7 +56,7 @@ git clone https://github.com/nuflakbrr/frontend-template.git
 2. Buat cabang baru.
 
 ```bash
-git checkout -b template_name-version
+git checkout -b template-name
 ```
 
 3. Buat template baru.
@@ -64,7 +64,7 @@ git checkout -b template_name-version
 4. Push ke cabang.
 
 ```bash
-git push origin template_name-version
+git push origin template-name
 ```
 
 ### Backend
@@ -78,7 +78,7 @@ git clone https://github.com/nuflakbrr/backend-template.git
 2. Buat cabang baru.
 
 ```bash
-git checkout -b template_name-version
+git checkout -b template-name
 ```
 
 3. Buat template baru.
@@ -86,7 +86,7 @@ git checkout -b template_name-version
 4. Push ke cabang.
 
 ```bash
-git push asal template_nama-versi
+git push asal template-name
 ```
 
 ## Lisensi
