@@ -74,7 +74,7 @@ Then you can answer some questions asked by package `BikinProject`:
 
 ### Frontend
 
-- React.js (Tailwind + TypeScript) 🚧
+- React.js (Tailwind + TypeScript)
 - React.js (Tailwind + JavaScript) 🚧
 - Next.js App Router (Tailwind + TypeScript)
 - Next.js App Router (Tailwind + JavaScript)
@@ -85,7 +85,8 @@ Then you can answer some questions asked by package `BikinProject`:
 
 ### Fullstack
 
-- 🚧
+- Laravel Breeze API w/ Next.js App Router (Tailwind + TypeScript)
+- Laravel Breeze API w/ Next.js App Router (Tailwind + JavaScript) 🚧
 
 ## How to Contribute
 
