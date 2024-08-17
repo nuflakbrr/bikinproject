@@ -84,7 +84,7 @@ async function main() {
 
     if (project !== null || project !== undefined) {
         const s = p.spinner();
-        const nextSteps = `cd ${project.path}        \n${project.install ? '' : 'npm install\n'}npm run dev`;
+        const nextSteps = `cd ${project.path}        \n${project.install ? '' : 'npm install\n'}npm run dev\n\n${color.underline(color.cyan('Happy Coding!'))}`;
         const contact = `Have a Problems? Report to ${color.underline(color.cyan('https://github.com/nuflakbrr/bikinproject/issues'))}`;
 
         s.start('⏳ Creating project...');
