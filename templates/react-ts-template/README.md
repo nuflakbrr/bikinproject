@@ -48,7 +48,7 @@ Terdapat beberapa poin penting terkait bagaimana menjalankan proyek arsitektur y
 └── package.json
 └── postcss.config.js
 └── README.md
-└── tailwind.config.ts
+└── tailwind.config.js
 └── tsconfig.app.json
 └── tsconfig.json
 └── tsconfig.node.json
@@ -120,7 +120,7 @@ Template ini tersedia di BikinProject! Cara bagaimana untuk menggunakan template
   │  ./your-project
   │
   ◇  Pick a project type within "./your-project"
-  │  Next.js App Router (Tailwind + TypeScript)
+  │  React.js (Tailwind + TypeScript)
   │
   ◇  Install dependencies? (currently only NPM is supported)
   │  ● Yes / ○ No
@@ -139,7 +139,7 @@ Template ini tersedia di BikinProject! Cara bagaimana untuk menggunakan template
   │  ./your-project
   │
   ◇  Pick a project type within "./your-project"
-  │  Next.js App Router (Tailwind + TypeScript)
+  │  React.js (Tailwind + TypeScript)
   │
   ◇  Install dependencies? (currently only NPM is supported)
   │  No
@@ -175,7 +175,7 @@ Anda dapat mulai mengedit halaman dengan memodifikasi `/src/components/Container
 
 Untuk mempelajari lebih lanjut tentang React.js, lihat referensi berikut:
 
-- [Dokumentasi React.js](https://react.dev/learn) - tutorial Next.js yang interaktif.
+- [Dokumentasi React.js](https://react.dev/learn) - tutorial React.js yang interaktif.
 
 Anda dapat memeriksa [GitHub Repositori React.js](https://github.com/facebook/react/) - umpan balik dan kontribusi Anda dipersilakan!
 
