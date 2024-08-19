@@ -63,6 +63,7 @@ async function main() {
                     initialValue: 'react-ts-template',
                     options: [
                         { value: 'react-ts-template', label: 'React.js (Tailwind + TypeScript)' },
+                        { value: 'react-js-template', label: 'React.js (Tailwind + JavaScript)' },
                         { value: 'next-ts-template', label: 'Next.js App Router (Tailwind + TypeScript)' },
                         { value: 'next-js-template', label: 'Next.js App Router (Tailwind + JavaScript)' },
                         { value: 'laranext-ts-template', label: 'Laravel Breeze API w/ Next.js App Router (Tailwind + TypeScript)' },

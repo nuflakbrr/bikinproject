@@ -75,7 +75,7 @@ Then you can answer some questions asked by package `BikinProject`:
 ### Frontend
 
 - React.js (Tailwind + TypeScript)
-- React.js (Tailwind + JavaScript) 🚧
+- React.js (Tailwind + JavaScript)
 - Next.js App Router (Tailwind + TypeScript)
 - Next.js App Router (Tailwind + JavaScript)
 

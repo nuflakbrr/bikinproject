@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import styles from './Navbar.module.css';
@@ -6,8 +6,8 @@ import { headerNavLinks } from '@/data/headerNavLinks';
 import { classNames } from '@/lib/classNames';
 import ThemeToggle from '@/components/Common/ThemeToggle';
 
-const Navbar: FC = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const location = useLocation();
 
@@ -42,7 +42,7 @@ const Navbar: FC = () => {
   };
 
   // isMenuActive handler
-  const isMenuActive = (path: string) => {
+  const isMenuActive = (path) => {
     const isHomePage = location.pathname === '/' && path === '/';
 
     if (isHomePage) {

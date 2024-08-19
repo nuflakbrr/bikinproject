@@ -34,25 +34,21 @@ Terdapat beberapa poin penting terkait bagaimana menjalankan proyek arsitektur y
 │   └── context/
 │   └── data/
 │   └── hooks/
-│   └── interfaces/
 │   └── layouts/
 │   └── lib/
 │   └── pages/
 │   └── providers/
 │   └── index.css
-│   └── main.tsx
-│   └── vite-env.d.ts
+│   └── main.jsx
 └── .gitignore
 └── .eslint.config.js
 └── index.html
+└── jsconfig.json
 └── package.json
 └── postcss.config.js
 └── README.md
-└── tailwind.config.ts
-└── tsconfig.app.json
-└── tsconfig.json
-└── tsconfig.node.json
-└── vite.config.ts
+└── tailwind.config.js
+└── vite.config.js
 ```
 
 #### Folder Common
@@ -169,7 +165,7 @@ cp .env.example .env
 
 8. **Buka Server Pengembangan**: Buka [http://localhost:5173](http://localhost:5173) pada browser Anda dan lihat hasilnya.
 
-Anda dapat mulai mengedit halaman dengan memodifikasi `/src/components/Containers/Home/index.tsx`. Halaman diperbarui secara otomatis saat Anda mengedit file.
+Anda dapat mulai mengedit halaman dengan memodifikasi `/src/components/Containers/Home/index.jsx`. Halaman diperbarui secara otomatis saat Anda mengedit file.
 
 ## Pelajari Lebih
 

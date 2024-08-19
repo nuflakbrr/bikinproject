@@ -6,7 +6,7 @@ import './index.css'
 import { ThemeProvider } from './providers/ThemeProvider';
 import router from './config/route';
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
