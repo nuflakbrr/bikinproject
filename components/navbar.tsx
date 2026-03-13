@@ -19,10 +19,10 @@ const VersionManager = dynamic(() => import("./version-select"), {
 
 type NavLink =
   | {
-      title: string;
-      href: string;
-      external?: boolean;
-    }
+    title: string;
+    href: string;
+    external?: boolean;
+  }
   | { component: ReactNode; href: null };
 
 export const NAVLINKS: NavLink[] = [
@@ -44,7 +44,7 @@ export const NAVLINKS: NavLink[] = [
   },
   {
     title: "Community",
-    href: "https://github.com/nuflakbrr/bikinproject/discussions",
+    href: "https://github.com/nuflakbrr/create-bikinproject-app/discussions",
     external: true,
   },
 ];
