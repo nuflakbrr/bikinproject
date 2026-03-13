@@ -273,16 +273,20 @@ const v2_1_5_ROUTES: EachRoute[] = [
         href: "/svelte",
         items: [
           { title: "Svelte", href: "/svelte" },
-          { title: "SvelteKit", href: "/sveltekit" },
+          { title: "SvelteKit", href: "/svelte-kit" },
+        ],
+      },
+      {
+        title: "Solid.js",
+        href: "/solidjs",
+        items: [
+          { title: "Solid.js", href: "/solidjs" },
+          { title: "SolidStart", href: "/solid-start" },
         ],
       },
       {
         title: "Astro",
         href: "/astro",
-      },
-      {
-        title: "Solid.js",
-        href: "/solidjs",
       },
     ],
   },
