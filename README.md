@@ -16,23 +16,6 @@
 
 BikinProject is a starter project generator package that makes it easier for you when you want to create a project. The starter project provided is a custom starter project that has been designed in such a way that it can be easily used. Starter projects are available with various frameworks and programming languages.
 
-## List in Other Languages
-
-- [Bahasa Indonesia](./README.md)
-
-## Table of Contents
-
-- [BikinProject](#bikinproject)
-  - [Table of Contents](#list-of-contents)
-  - [Start Now](#start-now)
-  - [List Frameworks](#list-frameworks)
-    - [Frontend](#frontend)
-    - [Backend](#backend) 🚧
-    - [Fullstack](#fullstack) 🚧
-  - [How to Contribute](#how-to-contribute)
-  - [License](#license)
-  - [Author](#author)
-
 ## Get Started
 
 You can use this package by running the following command in your `terminal`:
