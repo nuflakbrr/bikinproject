@@ -235,7 +235,7 @@ const v1_4_x_ROUTES: EachRoute[] = [
   },
 ];
 
-const v2_1_5_ROUTES: EachRoute[] = [
+const v2_1_8_ROUTES: EachRoute[] = [
   {
     title: "Getting Started",
     href: "/getting-started",
@@ -330,8 +330,8 @@ export function getRoutesForVersion(v: Version) {
       return v1_3_x_ROUTES;
     case "v1.4.x":
       return v1_4_x_ROUTES;
-    case "v2.1.5":
-      return v2_1_5_ROUTES;
+    case "v2.1.8":
+      return v2_1_8_ROUTES;
   }
 }
 
@@ -346,7 +346,7 @@ export function getPreviousNext(path: string, v: Version) {
 }
 
 export const availableVersions = [
-  "v2.1.5",
+  "v2.1.8",
   "v1.4.x",
   "v1.3.x",
   "v1.2.x",

@@ -1,82 +1,62 @@
 ---
-title: React.js JavaScript
-description: Learn about the React.js JavaScript framework template.
+title: Astro
+description: Learn about the Astro framework template.
 ---
 
-## Reactjs Template Starter Kit (JavaScript)
+## Astro Template Starter Kit
 
-This is a [React.js](https://react.dev/) project bootstrapped with [`Vite.js`](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md).
+This is an [Astro](https://astro.build/) project bootstrapped with [`create-astro`](https://github.com/withastro/astro/tree/main/packages/create-astro), and generated using [**BikinProject**](https://nuflakbrr.github.io/bikinproject).
 
 ## Technologies Used
 
-- [React.js (JavaScript)](https://react.dev/)
-- [Tailwindcss](https://tailwindcss.com/)
-- [Axios](https://axios-http.com/docs/intro/)
+- [Astro](https://astro.build/)
+- [React](https://react.dev/)
+- [TailwindCSS v4](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
+- [Prettier](https://prettier.io/)
 
 ## Features
 
 The features included in this project template are:
 
-- Project Architecture.
-- Authentication.
-- Customize `React Hooks`.
-- Some custom functions that [I](https://github.com/nuflakbrr) often use.
+- **Project Architecture**: Clear separation of components using the `Common` and `Mixins` patterns.
+- **Modern Stack**: Using the latest versions of Astro, React, and Tailwind v4 integration.
+- **Vite Performance**: Extremely fast development experience powered by Vite.
+- **Dark/Light Mode**: Manual dark mode support saved in `localStorage` integrated with Tailwind classes.
+- **Automated SEO & Sitemap**: Dynamic sitemap and SEO generator using custom scripts.
 
-### Architecture Projects
+### Project Architecture
 
-There are several important points related to how to run a proper architecture project. For this case study, I have created a customized blank project template that I have implemented how to organize a good architecture project so that it looks tidy.
+There are several important points regarding how to implement a proper project architecture. For this case study, I have created a customized blank project template that implements best practices for organizing a project architecture to keep it clean.
 
-```plaintext
+```
 /
-├── public/
+├── public/                 # Static assets (favicon, robots.txt)
+├── scripts/                # Utility scripts (generate-seo.ts)
 ├── src/
-│   └── components/
-│   │   └── Common/
-│   │   └── Containers/
-│   │   └── Mixins/
-│   │   └── README.md
-│   └── config/
-│   └── context/
-│   └── data/
-│   └── hooks/
-│   └── layouts/
-│   └── lib/
-│   └── pages/
-│   └── providers/
-│   └── index.css
-│   └── main.jsx
-└── .gitignore
-└── .eslint.config.js
-└── index.html
-└── jsconfig.json
-└── package.json
-└── postcss.config.js
+│   ├── components/         # Astro/React components
+│   │   ├── Common/         # Atomic/small components
+│   │   ├── Containers/     # Page-specific section components
+│   │   └── Mixins/         # Complex components (Navbar, Footer)
+│   ├── data/               # Static data & Metadata (SEO)
+│   ├── interfaces/         # TypeScript Interfaces
+│   ├── layouts/            # Main application layout
+│   ├── lib/                # Utilities & Library helpers
+│   ├── pages/              # Astro File-based Routing
+│   ├── providers/          # Head Providers (ThemeProvider)
+│   ├── styles/             # Global CSS & Tailwind Entry
+│   └── types/              # TypeScript type definitions
+├── astro.config.mjs        # Astro configuration & Integration
+├── package.json            # Dependencies & Scripts
+├── tsconfig.json           # TypeScript configuration
 └── README.md
-└── tailwind.config.js
-└── vite.config.js
 ```
 
-#### Common Folder
+#### UI Components
 
-The `Common` folder is located in `/src/components/`. So what does it contain? The `Common` folder contains small components, such as: buttons, dropdowns, etc.
-
-#### Mixins Folder
-
-The `Mixins` folder is located in `/src/components/`. So what does it contain? The `Mixins` folder contains components that are a combination of small components from the `Common` folder. Such as: navbar (which contains some common things such as buttons, dropdowns, etc.).
-
-#### Containers Folder
-
-The `Containers` folder is located in `/src/components/`. So what does it contain? The `Containers` folder contains a combination of the `Common` folder and the page itself which form 1 page. 1 page 1 `Containers` folder to keep it tidy.
-
-If 1 container has several sections, then you must separate and put them in the `components` folder but still in 1 `Containers` folder. Such as: `/src/components/Containers/Home/components`.
-
-### Authentication
-
-This project template already uses authentication using `React Context`. If the user has authenticated, the user cannot access the `login` or `register` page again.
-
-### React Hooks Customization
-
-You can use, and add your own custom `React Hooks` to the `/src/hooks` folder that has been provided. There is an example of `React Hooks` customization for `Data Fetching` using [Axios](https://axios-http.com/docs/intro).
+- **Common Folder**: Contains atomic components such as buttons, icons, or other reusable basic UI elements.
+- **Mixins Folder**: Contains larger and more complex components that are combinations of several `Common` components, such as Navbar or Footer.
+- **Containers Folder**: Separates large and unique section logic that isolates pages from repetitive components.
 
 ## Getting Started
 
@@ -114,8 +94,12 @@ Choose a starter project that suits your needs.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  ● React.js (Tailwind + TypeScript)
-│  ○ React.js (Tailwind + JavaScript)
+│  ○ Next.js
+│  ○ Tanstack Router
+│  ○ Tanstack Start
+│  ○ Vue.js
+│  ○ Nuxt.js
+│  ● Astro
 │  ○ etc.
 └  # Select a project type by using the arrow keys
 ```
@@ -132,7 +116,7 @@ Wait for BikinProject to create the project for you.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  React.js (Tailwind + JavaScript)
+│  Astro
 │
 ◇  ⏳ Creating project...
 ```
@@ -143,8 +127,8 @@ Wait for BikinProject to create the project for you.
 Choose to install dependencies or not.
 
 <Note title="Note" type="note">
-  If you choose to install dependencies, BikinProject will install the necessary dependencies for
-  you. Please wait for the installation to complete.
+  If you choose to install dependencies, BikinProject will install the necessary
+  dependencies for you. Please wait for the installation to complete.
 </Note>
 
 ```
@@ -154,7 +138,7 @@ Choose to install dependencies or not.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  React.js (Tailwind + JavaScript)
+│  Astro
 │
 ◇  ⏳ Creating project...
 │
@@ -177,7 +161,7 @@ Choose package manager to install dependencies.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  React.js (Tailwind + JavaScript)
+│  Astro
 │
 ◇  ⏳ Creating project...
 │
@@ -206,7 +190,7 @@ Wait for BikinProject to install the dependencies for you.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  React.js (Tailwind + JavaScript)
+│  Astro
 │
 ◇  ⏳ Creating project...
 │
@@ -239,7 +223,8 @@ Wait for BikinProject to install the dependencies for you.
 </StepperItem>
 
 <StepperItem title="Start Building Your Project">
-  After BikinProject generate the starter project, you can start building your project.
+  After BikinProject generate the starter project, you can start building your
+  project.
 </StepperItem>
 
 <StepperItem title="Copy Environment Variable">
@@ -252,9 +237,9 @@ cp .env.example .env
 </StepperItem>
 
 <StepperItem title="Open Development Server">
-Open [http://localhost:5173](http://localhost:5173) in your browser and see the result.
+Open [http://localhost:4321](http://localhost:4321) in your browser and see the result.
 
-You can start editing the page by modifying `/src/components/Containers/Home/index.tsx`. The page updates automatically as you edit the file.
+You can start editing the page by modifying `/src/pages/index.astro`. The page updates automatically as you edit the file.
 
 </StepperItem>
 
@@ -262,11 +247,18 @@ You can start editing the page by modifying `/src/components/Containers/Home/ind
 
 ## Learn More
 
-To learn more about React.js, see the following resources:
+To learn more about Astro, see the following resources:
 
-- [Documentation React.js](https://react.dev/learn) - interactive React.js tutorials.
+- [Astro Documentation](https://docs.astro.build) - learn about Astro features and APIs.
+- [Astro Guides](https://docs.astro.build/en/guides/) - interactive Astro guides.
 
-You can check out the [React.js GitHub Repository](https://github.com/facebook/react/) - your feedback and contributions are welcome!
+You can check out the [Astro GitHub Repository](https://github.com/withastro/astro/) - your feedback and contributions are welcome!
+
+## Deployment
+
+The easiest way to deploy your Astro app is using [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/new/templates/astro).
+
+See [Astro deployment documentation](https://docs.astro.build/en/guides/deploy/) for more details.
 
 ## Author of This Template
 

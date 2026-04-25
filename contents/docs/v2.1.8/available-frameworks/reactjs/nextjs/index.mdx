@@ -1,90 +1,71 @@
 ---
-title: Next.js JavaScript
-description: Learn about the Next.js JavaScript framework template.
+title: Next.js App Router
+description: Learn about the Next.js App Router framework template.
 ---
 
-## Nextjs Template Starter Kit (JavaScript)
+## Nextjs Template Starter Kit
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), and generated using [**BikinProject**](https://nuflakbrr.github.io/bikinproject).
 
 ## Technologies Used
 
-- [Next.js (JavaScript)](https://nextjs.org/)
-- [Tailwindcss](https://tailwindcss.com/)
-- [Axios](https://axios-http.com/docs/intro/)
+- [Next.js (App Router)](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
+- [ESLint & Prettier](https://eslint.org/)
 
 ## Features
 
 The features included in this project template are:
 
-- Project Architecture.
-- Authentication.
-- Customize `React Hooks`.
-- Customize ESLint Rules.
-- Some custom functions that [I](https://github.com/nuflakbrr) often use.
+- **Project Architecture**: Clear separation of components using the `Common` and `Mixins` patterns.
+- **Modern Stack**: Using the latest versions of Next.js and React.
+- **Turbopack Build**: Extremely fast development experience.
+- **Custom Hooks**: A collection of useful hooks such as `useDebounce`, `usePagination`, and `useSort`.
+- **Dark/Light Mode**: Built-in support for `next-themes`.
 
-### Architecture Projects
+### Project Architecture
 
-There are several important points related to how to run a proper architecture project. For this case study, I have created a customized blank project template that I have implemented how to organize a good architecture project so that it looks tidy.
+There are several important points regarding how to implement a proper project architecture. For this case study, I have created a customized blank project template that implements best practices for organizing a project architecture to keep it clean.
 
-```plaintext
+```
 /
-├── public/
+├── public/              # Static assets (images, fonts, etc.)
 ├── src/
-│   └── app/
-│   │   └── about/
-│   │   └── api/
-│   │   └── auth/
-│   │   └── contact/
-│   │   └── favicon.ico
-│   │   └── globals.css
-│   │   └── layout.jsx
-│   │   └── loading.jsx
-│   │   └── not-found.jsx
-│   │   └── page.jsx
-│   └── components/
-│   │   └── Common/
-│   │   └── Containers/
-│   │   └── Mixins/
-│   │   └── README.md
-│   └── context/
-│   └── data/
-│   └── hooks/
-│   └── layouts/
-│   └── lib/
-│   └── providers/
-└── .env.example
-└── .eslintrc.json
-└── .gitignore
-└── jsconfig.json
-└── next.config.js
-└── package.json
-└── postcss.config.js
+│   ├── app/             # Next.js App Router (Pages & API)
+│   │   ├── api/         # API Endpoints (route.js)
+│   │   ├── (auth)/      # Auth route groups
+│   │   ├── (root)/      # Main page route groups
+│   │   └── layout.jsx   # Main application layout
+│   ├── components/      # UI Components
+│   │   ├── Common/      # Atomic/small components
+│   │   └── Mixins/      # Complex components (Common combinations)
+│   ├── data/            # Static data & Metadata
+│   ├── hooks/           # Custom React Hooks (JS)
+│   ├── interfaces/      # TypeScript Interfaces
+│   ├── lib/             # Utilities & Library helpers
+│   └── providers/       # Wrapper providers for layout
+├── eslint.config.mjs    # Latest ESLint configuration
+├── jsconfig.json        # JavaScript path aliases configuration
+├── next.config.js       # Next.js configuration
+├── package.json         # Dependencies & Scripts
+├── tailwind.config.ts   # Tailwind CSS configuration
 └── README.md
-└── tailwind.config.js
 ```
 
-#### Common Folder
+#### UI Components
 
-The `Common` folder is located in `/src/components/`. So what does it contain? The `Common` folder contains small components, such as: buttons, dropdowns, etc.
+- **Common Folder**: Contains atomic components such as buttons, icons, or other reusable basic UI elements.
+- **Mixins Folder**: Contains larger and more complex components that are combinations of several `Common` components, such as Navbar or Footer.
 
-#### Mixins Folder
+### Custom React Hooks
 
-The `Mixins` folder is located in `/src/components/`. So what does it contain? The `Mixins` folder contains components that are a combination of small components from the `Common` folder. Such as: navbar (which contains some common things such as buttons, dropdowns, etc.).
+Several hooks are provided to speed up development:
 
-#### Containers Folder
-
-The `Containers` folder is located in `/src/components/`. So what does it contain? The `Containers` folder contains a combination of the `Common` folder and the page itself which form 1 page. 1 page 1 `Containers` folder to keep it tidy.
-
-If 1 container has several sections, then you must separate and put them in the `components` folder but still in 1 `Containers` folder. Such as: `/src/components/Containers/Home/components`.
-
-### Authentication
-
-This project template already uses authentication using `React Context`. If the user has authenticated, the user cannot access the `login` or `register` page again.
-
-### React Hooks Customization
-
-You can use, and add your own custom `React Hooks` to the `/src/hooks` folder that has been provided. There is an example of `React Hooks` customization for `Data Fetching` using [Axios](https://axios-http.com/docs/intro).
+- `useDebounce`: To handle inputs that require delayed actions.
+- `usePagination`: To handle page navigation via query params.
+- `useSort`: To handle data sorting logic.
 
 ## Getting Started
 
@@ -122,8 +103,9 @@ Choose a starter project that suits your needs.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  ● Next.js App Router (Tailwind + TypeScript)
-│  ○ Next.js App Router (Tailwind + JavaScript)
+│  ● Next.js
+│  ○ Tanstack Router
+│  ○ Tanstack Start
 │  ○ etc.
 └  # Select a project type by using the arrow keys
 ```
@@ -140,7 +122,7 @@ Wait for BikinProject to create the project for you.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  Next.js App Router (Tailwind + JavaScript)
+│  Next.js
 │
 ◇  ⏳ Creating project...
 ```
@@ -151,8 +133,8 @@ Wait for BikinProject to create the project for you.
 Choose to install dependencies or not.
 
 <Note title="Note" type="note">
-  If you choose to install dependencies, BikinProject will install the necessary dependencies for
-  you. Please wait for the installation to complete.
+  If you choose to install dependencies, BikinProject will install the necessary
+  dependencies for you. Please wait for the installation to complete.
 </Note>
 
 ```
@@ -162,7 +144,7 @@ Choose to install dependencies or not.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  Next.js App Router (Tailwind + JavaScript)
+│  Next.js
 │
 ◇  ⏳ Creating project...
 │
@@ -185,7 +167,7 @@ Choose package manager to install dependencies.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  Next.js App Router (Tailwind + JavaScript)
+│  Next.js
 │
 ◇  ⏳ Creating project...
 │
@@ -214,7 +196,7 @@ Wait for BikinProject to install the dependencies for you.
 │  ./your-project
 │
 ◇  Pick a project type within "./your-project"
-│  Next.js App Router (Tailwind + JavaScript)
+│  Next.js
 │
 ◇  ⏳ Creating project...
 │
@@ -247,7 +229,8 @@ Wait for BikinProject to install the dependencies for you.
 </StepperItem>
 
 <StepperItem title="Start Building Your Project">
-  After BikinProject generate the starter project, you can start building your project.
+  After BikinProject generate the starter project, you can start building your
+  project.
 </StepperItem>
 
 <StepperItem title="Copy Environment Variable">
@@ -262,7 +245,7 @@ cp .env.example .env
 <StepperItem title="Open Development Server">
 Open [http://localhost:3000](http://localhost:3000) in your browser and see the result.
 
-You can start editing the page by modifying `/src/components/Containers/Home/Home.jsx`. The page updates automatically as you edit the file.
+You can start editing the page by modifying `/src/components/Containers/Home/Home.tsx`. The page updates automatically as you edit the file.
 
 </StepperItem>
 
@@ -270,7 +253,7 @@ You can start editing the page by modifying `/src/components/Containers/Home/Hom
 
 ## API Routes
 
-[API Routes](https://nextjs.org/docs/api-routes/introduction) can be accessed at [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `/src/app/api/hello.js`.
+[API Routes](https://nextjs.org/docs/api-routes/introduction) can be accessed at [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `/src/app/api/hello.ts`.
 
 The `/src/app/api` folder is mapped to `/api/*`. Files in this directory are treated as [API Routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
@@ -283,11 +266,11 @@ To learn more about Next.js, see the following resources:
 
 You can check out the [Next.js GitHub Repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Publishing on Vercel
+## Deployment
 
-The easiest way to publish your Next.js app is using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-See our [Next.js publishing documentation](https://nextjs.org/docs/deployment) for more details.
+See [Next.js publishing documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Author of This Template
 
